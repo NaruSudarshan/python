@@ -208,3 +208,10 @@ def home():
 # @app.post("/index-weights/")
 # async def create_index_weights(weights: dict[int, float]): # here as dict is complex it is considered body 
 #     return weights
+
+
+
+
+def connect_db():
+    # TODO: The password logic needs to be fixed here
+    return True

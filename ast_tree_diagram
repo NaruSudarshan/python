@@ -1,0 +1,16 @@
+// AST Structure
+digraph {
+	rankdir=TB size="8,5"
+	node [fillcolor=lightblue fontname=Arial shape=box style=filled]
+	A [label=Module fillcolor="#ffcc00"]
+	B [label=Assign fillcolor="#ffcc00"]
+	C [label="Name
+(id=\"password\")" fillcolor="#99ff99"]
+	D [label="Constant
+(value=\"123\")" fillcolor="#ff9999"]
+	E [label=Store fillcolor=white shape=ellipse]
+	A -> B [label=" body[0]"]
+	B -> C [label=" targets[0]"]
+	B -> D [label=" value"]
+	C -> E [label=" ctx"]
+}
